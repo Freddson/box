@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 //requiring packages
 const fetch = require("node-fetch")
 const cp = require("child_process")
