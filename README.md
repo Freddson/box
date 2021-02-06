@@ -11,3 +11,6 @@ A JavaScript based package manager for Linux.
 
 ## How to build box
 Information about that and other things related to box is located in the wiki of this repository.
+
+## License
+MIT
