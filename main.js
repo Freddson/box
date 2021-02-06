@@ -34,7 +34,7 @@ if(args[2] !== null && args[2] !== undefined) {
     //if found, call the file from the commands folder with the same name
     switch(args[2]){
         case "install":
-            cachecmd(callfuncargs)
+            cachecmd()
             install.download(callfuncargs);
             install.installpkg(callfuncargs);
             break;
