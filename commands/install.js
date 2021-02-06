@@ -11,11 +11,13 @@ fs.readFile('.boxcache', function(err, data) {
     });
     fs.unlink('.boxcache', function (err) {
         if (err) throw err;
+        //yes i know that instead of "Deleted" there should be "Created" here but JavaScript is weird and mixes the logs up, saying that it first deleted the cache and then created. Gotta find a fix ASAP
+        console.log("Created cachefile.")
     });
 }
 
 function installpkg() {
-    console.log("called install")
+
 }
 
 module.exports = { download, installpkg };

@@ -26,6 +26,8 @@ module.exports.callfuncargs = callfuncargs;
 const cachecmd = () => {
     fs.writeFile('.boxcache', callfuncargs, function (err) {
         if (err) throw err;
+        //yes i know that instead of "Created" there should be "Deleted" here but JavaScript is weird and mixes the logs up, saying that it first deleted the cache and then created. Gotta find a fix ASAP
+        console.log("Deleted cachefile, proceeding to download...")
       });
 };
 
@@ -35,8 +37,8 @@ if(args[2] !== null && args[2] !== undefined) {
     switch(args[2]){
         case "install":
             cachecmd()
-            install.download(callfuncargs);
-            install.installpkg(callfuncargs);
+            install.download();
+            install.installpkg();
             break;
         case "remove":
             rem.rempackage(callfuncargs);
