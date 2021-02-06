@@ -17,18 +17,15 @@ const help = require(`./commands/help`)
 const rem = require(`./commands/remove`)
 const search = require(`./commands/search`)
 
-//caching arguments file
-const cachecmd = require(`./utils/cachearg`)
-
 //export needed for install, remove and search commandfiles
 module.exports.callfuncargs = callfuncargs;
 
 //console.log(args[3])
 
+//const function for caching packages for install and remove commandfiles
 const cachecmd = () => {
     fs.writeFile('.boxcache', callfuncargs, function (err) {
         if (err) throw err;
-        console.log('Saved!');
       });
 };
 
