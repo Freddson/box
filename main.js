@@ -4,8 +4,8 @@
 const fetch = require("node-fetch")
 //call child process
 const cp = require("child_process")
-//path
-const path = require('path');
+//fs for creating the cachefile in cachecmd const function
+const fs = require("fs")
 
 //args
 const args = process.argv
@@ -25,11 +25,19 @@ module.exports.callfuncargs = callfuncargs;
 
 //console.log(args[3])
 
+const cachecmd = () => {
+    fs.writeFile('.boxcache', callfuncargs, function (err) {
+        if (err) throw err;
+        console.log('Saved!');
+      });
+};
+
 //check if command is in func_array
 if(args[2] !== null && args[2] !== undefined) {
     //if found, call the file from the commands folder with the same name
     switch(args[2]){
         case "install":
+            cachecmd(callfuncargs)
             install.download(callfuncargs);
             install.installpkg(callfuncargs);
             break;
