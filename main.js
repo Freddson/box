@@ -4,6 +4,8 @@
 const fetch = require("node-fetch")
 //call child process
 const cp = require("child_process")
+//path
+const path = require('path');
 
 //args
 const args = process.argv
@@ -15,8 +17,11 @@ const help = require(`./commands/help`)
 const rem = require(`./commands/remove`)
 const search = require(`./commands/search`)
 
+//caching arguments file
+const cachecmd = require(`./utils/cachearg`)
+
 //export needed for install, remove and search commandfiles
-module.exports.callfuncargs = process.argv[3];
+module.exports.callfuncargs = callfuncargs;
 
 //console.log(args[3])
 
@@ -25,7 +30,8 @@ if(args[2] !== null && args[2] !== undefined) {
     //if found, call the file from the commands folder with the same name
     switch(args[2]){
         case "install":
-            install.installfunc(callfuncargs);
+            install.download(callfuncargs);
+            install.installpkg(callfuncargs);
             break;
         case "remove":
             rem.rempackage(callfuncargs);

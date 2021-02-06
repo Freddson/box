@@ -18,6 +18,7 @@
   "author": "Freddson",
   "license": "ISC",
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "path": "^0.12.7"
   }
 }
