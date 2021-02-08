@@ -1,0 +1,3 @@
+- name: pkg-size-action
+  uses: pkg-size/action@v1
+
