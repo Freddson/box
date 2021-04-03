@@ -1,4 +1,4 @@
-[![box logo](https://i.imgur.com/yjIG9tA.png")]()
+[![box logo](https://i.imgur.com/yjIG9tA.png")](#)
 
 # box
 A JavaScript-based package manager for Linux.
