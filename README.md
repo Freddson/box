@@ -3,8 +3,8 @@
 # box
 A JavaScript-based package manager for Linux.
 
-[![Made with JavaScript badge](https://forthebadge.com/images/badges/made-with-javascript.svg)]()
-[![Open source badge](https://forthebadge.com/images/badges/open-source.svg)]()
+[![Made with JavaScript badge](https://forthebadge.com/images/badges/made-with-javascript.svg)](#)
+[![Open source badge](https://forthebadge.com/images/badges/open-source.svg)](#)
 
 ## The advantages of box
 - **Very lightweight**, it weighs around 300kb.
