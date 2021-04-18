@@ -1,9 +1,10 @@
-<img src="https://i.imgur.com/yjIG9tA.png">
+[![box logo](https://i.imgur.com/yjIG9tA.png")](#)
 
-## box
-A JavaScript based package manager for Linux.
+# box
+A JavaScript-based package manager for Linux.
 
-<div style="text-align:center"><img src="https://forthebadge.com/images/badges/made-with-javascript.svg">   <img src=https://forthebadge.com/images/badges/open-source.svg></div>
+[![Made with JavaScript badge](https://forthebadge.com/images/badges/made-with-javascript.svg)](#)
+[![Open source badge](https://forthebadge.com/images/badges/open-source.svg)](#)
 
 ## The advantages of box
 - **Very lightweight**, it weighs around 300kb.
